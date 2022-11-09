@@ -1,0 +1,37 @@
+{{>layouts/header}}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">순번</th>
+        <th scope="col">제목</th>
+        <th scope="col">내용</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{#articles}}
+    <tr>
+        <th scope="row">{{id}}</th>
+
+        {{#title}}
+            <td> {{title}} </td>
+        {{/title}}
+        {{^title}}
+            <td> 제목이 없습니다 </td>
+        {{/title}}
+
+        {{#content}}
+            <td> {{content}} </td>
+        {{/content}}
+        {{^content}}
+            <td> 내용이 없습니다. </td>
+        {{/content}}
+
+    </tr>
+        {{/articles}}
+    </tbody>
+
+</table>
+
+
+{{>layouts/footer}}

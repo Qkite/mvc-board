@@ -1,0 +1,19 @@
+{{>layouts/header}}
+
+<form action = "/articles" method = "post">
+    <div class="mb-3">
+
+        <label for="exampleFormControlInput1" class="form-label">제목</label>
+        <input type="text" class="form-control" name = "title" placeholder="제목을 입력하세요">
+        <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+        <textarea class="form-control" name="content" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary">제출</button>
+    </div>
+
+</form>
+
+
+<!--type을 submit으로 설정해주어야 데이터가 넘어간다!-->
+<!-- form 안에 감싸주어야 데이터 넘어가는 것이 동작합니다-->
+
+{{>layouts/header}}
