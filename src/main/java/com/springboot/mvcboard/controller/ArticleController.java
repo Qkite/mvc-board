@@ -24,7 +24,7 @@ public class ArticleController {
     // Constructor를 이용해서 ArticleRepository와  ArticleController의 의존관계를 주입함(DI)
     // ArticleRepository: dao 클래스처럼 데이터를 생성하고 찾는 기능을 모두 담당함
 
-    ArticleRepository articleRepository;
+    private final ArticleRepository articleRepository;
 
     public ArticleController(ArticleRepository articleRepository) {
         this.articleRepository = articleRepository;

@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class Article {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue
     private Long id;
     private String title;
     private String content;
@@ -22,4 +22,6 @@ public class Article {
         this.title = title;
         this.content = content;
     }
+
+
 }

@@ -2,10 +2,8 @@ package com.springboot.mvcboard.dto;
 
 import com.springboot.mvcboard.domain.Article;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
-@NoArgsConstructor
 public class ArticleDto {
 
     private Long id;
